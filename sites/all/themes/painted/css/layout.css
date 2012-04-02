@@ -1,0 +1,167 @@
+
+#page{
+	width:1005px; /* edit to change the width of the page */
+	margin:0 auto; /* remove 'auto' and the width to switch to a fluid width */
+}
+
+.two-sidebars .center,
+.sidebar-first .center  {
+  margin-left: 190px;     /* LEFT value */
+}
+
+.left {
+  width: 190px;           /* LEFT value */
+	margin-right:-190px;    /* negative LEFT value */
+}
+
+.two-sidebars .center,
+.sidebar-second .center {
+  margin-right: 200px;    /* RIGHT value */
+}
+
+.right{
+  width: 200px;           /* RIGHT value */
+}
+
+/* PAGE BORDER
+   You can alter the thickness of the dark border around the page
+   by changing the next 'padding' value.
+*/
+
+#border{
+	padding:4px; 
+}
+
+/* 
+   PADDING INSIDE COLUMNS
+   The next two values can be edited to change the 'white space'
+   surrounding the content of each column, like the sidebars or the
+   content. 
+*/
+
+#content .center{
+  padding:35px 40px 50px;
+}
+.sidebar .inner{
+  padding:7px 4px 20px;
+}
+
+/* ------------------------------------------------------------------
+                DO NOT CHANGE the followings
+---------------------------------------------------------------------*/
+
+#main{
+  position:relative;
+  overflow:hidden;     /* activate columns trick */
+}
+
+#content {
+	float:left;
+	width:100%;
+	margin-right:-100%;
+}
+
+#content-area{
+  position:relative;
+}
+
+.sidebar{
+	float:left;
+}
+
+.right{
+  float:right;
+}
+
+/* 
+ * Emulate the equal height colums
+ * http://www.satzansatz.de/cssd/companions.html
+ */
+
+.fakecol{
+  position:absolute;
+  bottom:0;
+  height:100%;
+}
+
+#fakeleft{
+  left:0;
+}
+
+#fakeright{
+  right:0;
+}
+
+#fakecenter{
+  margin:0;
+  right:0;
+  width:100%;
+}
+
+#content,
+.sidebar, 
+#header, #footer{
+  position:relative;
+  z-index:2;
+}
+
+/* GENERAL DESIGN STYLES
+-------------------------------- */
+
+html{	
+	overflow-y:scroll;
+  background:transparent url('images/layout/bg.jpg') repeat top center; 
+}
+
+body {
+  font-size: 100%; /* Fixes exaggerated text resizing in IE6 and IE7 */
+}
+
+/* ----- header ----- */
+
+ #header{
+	background:transparent url('images/layout/header.jpg') no-repeat top center;
+}
+
+#header{
+	padding:10px 40px;
+}
+
+body.header-on #header{
+	padding:0 40px 10px;
+}
+
+/* ----- Page border ----- */
+
+#border{
+  background:transparent url('images/layout/border.gif') repeat top left;
+}
+
+/* ----- content and sidebars background ----- */
+
+#fakeleft, #fakeright { 
+  background:transparent url('images/layout/sidebar-bg.jpg') repeat-y top right;
+}
+
+#fakecenter { 
+  background:transparent url('images/layout/content-bg.gif') repeat top left;
+}
+
+#fakeright { 
+  background-position:top left;
+}
+
+
+/* ----- footer ----- */
+
+#footer {
+	float: none;
+	clear:both;
+}
+
+/* Layout Helpers */
+
+#content .mission,
+#content .node {
+	clear: both;
+}

@@ -1,0 +1,41 @@
+
+#main, 
+#page,
+#content,
+form{ 
+  height:1%; 
+}
+
+.breadcrumb{
+  background:transparent none;
+}
+
+.breadcrumb div{
+  padding:3px 0 1px;
+}
+
+.fieldsets-outer{
+  padding:6px 0;
+}
+
+.fakecol{ 
+  height:1000em; 
+}
+
+ul.primary {
+  position:relative;
+  top:6px;
+}
+
+div.admin .left, div.admin .right {
+	width:46%;  /* fix the admin page in IE6 */
+}
+
+/** Drupal admin tables **/
+
+#content tr.even th,
+#content tr.even td,
+#content tr.odd th,
+#content tr.odd td {
+  border-bottom: 1px solid #ccc; /* IE doesn't display borders on table rows */
+}

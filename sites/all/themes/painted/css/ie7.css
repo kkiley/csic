@@ -1,0 +1,27 @@
+
+#main, 
+#page{ 
+  height:1%; 
+}
+
+.fakecol{ 
+  height:1000em; 
+}
+
+.fieldsets-outer{
+  padding:8px 0 10px;
+}
+
+ul.primary {
+  position:relative;
+  top:3px;
+}
+
+/** Drupal admin tables **/
+
+#content tr.even th,
+#content tr.even td,
+#content tr.odd th,
+#content tr.odd td {
+  border-bottom: 1px solid #ccc; /* IE doesn't display borders */
+}
